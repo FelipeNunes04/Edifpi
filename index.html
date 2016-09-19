@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="countdown">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>EDIFPI - Encontro de Informática Piauiense</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">	
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="js/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/contactCtrl.js"></script>
+	<script src="js/directives/countdownDirective.js"></script>
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+</head><!--/head-->
+
+<body>
+	<header id="header" role="banner">		
+		<div class="main-nav">
+			    
+		        <div class="row">	        		
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                    <span class="sr-only">Toggle navigation</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">
+		                	<!--<img class="img-responsive" src="images/logo.png" alt="logo">-->
+		                </a>                    
+		            </div>
+		            <div class="collapse navbar-collapse">
+		                <ul class="nav navbar-nav navbar-right">                 
+		                    <li class="scroll active"><a href="#home">Home</a></li>
+		                    <li class="scroll"><a href="#count">Contagem Regressiva</a></li>                         
+		                    <li class="scroll"><a href="#about">Sobre</a></li>                     
+		                    <li class="scroll"><a href="#minicursos">Minicursos</a></li>
+		                    <li><a class="no-scroll" href="#" target="_blank">Inscreva-se</a></li>
+		                    <li class="scroll"><a href="#contact">Contato</a></li>       
+		                </ul>
+		            </div>
+		        </div>
+	        </div>
+        </div>                    
+    </header>
+    <!--/#header--> 
+
+    <section id="home">	
+		<div id="main-slider" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="img-responsive" src="images/slider/bg1.png" alt="banner do edifpi" id="img">				
+					<div class="carousel-caption">
+						<h2>Inscreva-se no nosso evento </h2>
+						<h4>É Grátis!</h4>
+						<a href="#">Realizar inscrição<i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>    	
+    </section>
+	<!--/#home-->
+
+	<section id="count" >
+		<div class="container">
+			<div class="row">
+				<div class="watch">
+					<img class="img-responsive" src="images/watch.png" alt="">
+				</div>				
+				<div class="col-md-4 col-md-offset-2 col-sm-5">
+					<h2>Nosso evento será daqui a</h2>
+				</div>		
+				<div class="col-sm-7 col-md-6">					
+					<ul id="countdown">
+						<li>					
+							<span class="days time-font">
+								<countdown set-date="2016-10-26 08:00:00" format-view="%d" expire-message="00"></countdown>	
+							</span>
+							<p class="timeRefDays">dias</p>
+						</li>
+						<li>
+							<span class="hours time-font">
+								<countdown set-date="2016-10-26 08:00:00" format-view="%h" expire-message="00"></countdown>	
+							</span>
+							<p> horas</p>
+						</li>
+						<li>
+							<span class="minutes time-font">
+								<countdown set-date="2016-10-26 08:00:00" format-view="%i" expire-message="00"></countdown>	
+							</span>
+							<p class="">minutos</p>
+						</li>
+						<li>
+							<span class="seconds time-font">
+								<countdown set-date="2016-10-26 08:00:00" format-view="%s" expire-message="00"></countdown>	
+							</span>
+							<p class="timeRefSeconds">segundos</p>
+						</li>				
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section><!--/#countdown-->
+
+	<section id="about">
+		<div class="about-content">					
+					<h2>Sobre o Edifpi</h2>
+					<p class="text-justify indent">O 7° Encontro de Informática Piauiense (EDIFPI), visa ampliar o conhecimento técnico-científico aliado à vivência profissional dentro da área de atuação da Informática, área está com demanda crescente na região de abrangência do curso.</p>
+					<p class="text-justify indent">Esse ano o EDIFPI integra também atividades voltadas para a disseminação do conhecimento e atitude empreendedora. A partir de ideias podem surgir novos negócios. As chamadas startups, são um grupo de pessoas trabalhando em uma ideia diferenciada que possa gerar lucros. No Piauí, por exemplo, o número de startups vem crescendo e, com isso, o seu reconhecimento vem ganhando espaço na área de Tecnologia da Informação (TI).</p>
+					<p class="text-justify indent">A cultura empreendedora é voltada para as tendências de mercados, acreditando que ideias são capazes de gerar negócios. Nesse sentido, empreendedorismo, inovação e tecnologia são inseridos no EDIFPI, a fim da criação de um ambiente propício ao surgimento de ideias e, principalmente ao aprendizado, reunindo desenvolvedores, pesquisadores, investidores, e a comunidade acadêmica, para o compartilhamento de conhecimentos e estímulo ao desenvolvimento tecnológico e a inovação.
+					</p>
+					<a href="arquivos/programacao.pdf" target="blank" class="btn btn-primary">Programação Completa <i class="fa fa-angle-right"></i></a>
+				
+		</div>
+		<div class="edifpi">
+			<img class="img-responsive" src="images/projeto.png" alt="edifpi">
+		</div>
+	</section><!--/#about-->
+
+
+
+	<section id="comissoes">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div>
+						<h2 class="heading">Comissões</h2>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/comissao/pitch.png" alt="pitch">
+											<h4>Concurso de Pitchs</h4>
+											<h5>Presidente - Professor Jesiel</h5>
+											<a class="btn btn-primary" href="http://zip.net/bqttNT" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/comissao/idea.png" alt="ideias">
+											<h4>Espaço de Ideias</h4>
+											<h5>Presidente - Professor Vicente</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/comissao/game.jpg" alt="games">
+											<h4>Game Jam</h4>
+											<h5>Presidente - Professor Jader</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section><!--/#comissões-->
+
+
+
+	<section id="minicursos">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12" >
+					<div id="event-carousel" class="carousel slide" data-interval="false">
+						<h2 class="heading">Minicursos</h2>
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/guilherme.jpg" alt="event-image">
+											<h4>Web apps com Ruby on Rails e Node.js</h4>
+											<h5>Guilherme Feitosa</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/kelvin.jpg" alt="event-image">
+											<h4>Aplicações em Tempo Real - “FireBase”</h4>
+											<h5>Kelvin Campelo</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
+											<h4>aplicações web com php e codeigniter</h4>
+											<h5>Fábio Luz</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/woshington.jpg" alt="event-image">
+											<h4>Criando aplicações com Cake PHP</h4>
+											<h5>Woshington</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/felipe.jpg" alt="event-image">
+											<h4>Single Page Apps com AngularJS</h4>
+											<h5>Felipe Nunes</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/dayvid.jpg" alt="event-image">
+											<h4>Criando sites com WordPress</h4>
+											<h5>Dayvid Emerson</h5>
+											<a class="btn btn-primary" href="#" target="blank">Inscreva-se</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section><!--/#minicursos-->
+	
+	<section id="sponsor">
+		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h2>Patrocinadores</h2>			
+						<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<ul>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="light">
+				<img class="img-responsive" src="images/light.png" alt="">
+			</div>
+		</div>
+	</section><!--/#sponsor-->
+
+	<section id="contact" ng-controller="contatoCtrl">
+		<div class="contact-section">
+			<div class="ear-piece">
+				<img class="img-responsive" src="images/ear-piece.png" alt="">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-4">
+						<div class="contact-text">
+							<h3>Contato</h3>
+							<address>
+								E-mail: contato@edifpi.com<br>
+								Telefone: (89)99979-2908<br>
+							</address>
+						</div>
+						<div class="contact-address">
+							<h3>Endereço</h3>
+							<address>
+								Av Pedro Marques de Medeiros<br>
+								Parque Industrial<br>
+								Picos - PI
+							</address>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div id="contact-section">
+							<h3>Envie uma mensagem em caso de dúvidas</h3>
+					    	<form id="main-contact-form" name="formularioContato" method="post">
+				                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+				                  <div class="col-sm-6">
+				                    <div class="form-group">
+				                      <input type="text" name="nome" class="form-control" ng-required="true" placeholder="Nome" ng-model="contato.nome">
+				     
+				                    </div>
+				                  </div>
+				                  <div class="col-sm-6">
+				                    <div class="form-group">
+				                      <input type="email" name="email" class="form-control" ng-required="true" placeholder="E-mail" ng-model="contato.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/">
+				                    </div>
+				                  </div>
+				                </div>
+				                <div class="form-group">
+				                  <input type="text" name="assunto" class="form-control" ng-required="true" placeholder="Assunto" ng-model="contato.assunto">
+				                </div>
+				                <div class="form-group">
+				                  <textarea name="mensagem" class="form-control" rows="4" ng-required="true" placeholder="Mensagem" ng-model="contato.mensagem"></textarea>
+				                </div>                        
+				               
+				                <button type="submit" class=" btn btn-primary" ng-click="enviaEmail()" ng-disabled="formularioContato.$invalid">Enviar</button>
+				               
+				              </form>
+
+
+				               <!-- Mensagens de erro -->
+				                <!-- Validando Nome -->
+				                <div ng-show="formularioContato.nome.$error.required && formularioContato.nome.$dirty" class="alert alert-danger">
+				                  Por favor, preencha o campo Nome!
+				                </div>
+				                <!--/Validando Nome -->              
+				                <!-- Validando E-mail -->
+				                <div class="alert alert-danger" ng-show="formularioContato.email.$error.required && formularioContato.email.$dirty">
+				                  Por favor, preencha o campo E-mail!
+				                </div>
+				                <div class="alert alert-danger" ng-show="formularioContato.email.$error.pattern">
+				                  Preencha o campo E-mail corretamente.
+				                </div>
+				                <!--/Validando E-mail -->
+				                <!-- Validando Assunto -->
+				                <div ng-show="formularioContato.assunto.$error.required && formularioContato.assunto.$dirty" class="alert alert-danger">
+				                  Por favor, preencha o campo Assunto!
+				                </div>
+				                <!--/Validando Assunto --> 
+				                <!-- Validando Mensagem -->
+				                <div ng-show="formularioContato.mensagem.$error.required && formularioContato.mensagem.$dirty" class="alert alert-danger">
+				                  Por favor, preencha o campo Mensagem!
+				                </div>
+				                <!--/Validando Mensagem --> 
+				              <!--/Mensagens de erro -->
+		 
+
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+    <!--/#contact-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p> Copyright  &copy;2016 EDIFPI.</p>                
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+  
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
+</body>
+</html>
