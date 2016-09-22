@@ -1,5 +1,5 @@
 .carousel-caption{
-	bottom:18% !important;
+	bottom:0% !important;
 }
 .logo{
 	margin: 40px 20px 20px 30px;
@@ -12,7 +12,7 @@
   padding-top: 3%;
 }
 .indent{
-	text-indent: 25px;
+	text-indent: 25px !important;
 }
 #comissoes{
 	background-color: #379131; 
@@ -26,14 +26,60 @@
   border: none;
   margin-top: 3px;
 }
-#contact-section .btn-primary {
-	margin-bottom: 20px;
-}
 #comissoes .btn-primary:hover {
   background-color: #126d55
 }
 #slide-minicursos{
 	width: 100%;
+}
+#palestras {
+  background-color: #778899 ;
+  background-image: url("../images/palestra-bg.jpg");
+  position: relative;  
+  width: 100%;
+}
+#palestras h2 {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+#startups {
+  background-color: #778899 ;
+  background-image: url("../images/startup-bg.png");
+  position: relative;  
+  width: 100%;
+}
+#startups h2 {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+#realizacao{
+	margin: 100px auto;	
+}
+#sponsor{
+	min-height: 500px !important;
+}
+#contact-section .btn-primary {
+	margin-bottom: 20px;
+}
+.heading{
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+.img-modal{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+.modal-body .text-primary{
+	color: #000;
 }
 @media (max-width: 479px) {
 	#home {
