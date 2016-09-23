@@ -88,4 +88,10 @@
   	#img{
   		width: 100%;
   	}
+  	.edifpi{
+		display: none;
+	}
+	.about-content h2{
+		text-align: center;
+	}
 }
