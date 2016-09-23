@@ -9,7 +9,7 @@
 body {
   font-family: 'Dosis', sans-serif;
   font-size: 17px;
-  color: #fff
+  color: #000
 }
 
 
@@ -48,7 +48,7 @@ h2 {
 }
 
 .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .navbar-toggle, 
@@ -81,7 +81,7 @@ h2 {
 
 .social-icons a {
   font-size: 18px;
-  color: #fff;
+  color: #000;
   padding-left:20px;  
 }
 
@@ -122,7 +122,7 @@ h2 {
 .navbar-right li a {
   padding: 35px 21px;
   font-size: 22px;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   font-family: 'Yanone Kaffeesatz', 'sans-serif';
   font-weight: 300;
@@ -131,7 +131,7 @@ h2 {
 .navbar-right li a:hover, 
 .navbar-right li a:focus,  
 .navbar-right .active a {
-  background-color: #fff;
+  background-color: #000;
   color: #16728f
 }
 
@@ -193,12 +193,13 @@ h2 {
   float: left;
   left: 0;
   opacity: 0.8;
-  padding:10px 60px 35px;
+  padding:10px 40px 20px;
   right: inherit;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFF;
   text-align: left;
 }
+
 
 
 #main-slider 
@@ -215,12 +216,13 @@ h2 {
 #main-slider 
 .carousel-caption a {
   font-size: 22px;
-  color: #2da1c5
+  color: #FFF
 }
 
 #main-slider 
 .carousel-caption a:hover {
-  color: #2588a6
+  color: #FFF;
+  text-decoration: underline;
 }
 
 #main-slider 
@@ -335,7 +337,7 @@ h2 {
 }
 
 #countdown li:before {
-  background-color: #FFFFFF;
+  background-color: #000;
   content: "";
   height: 11px;
   left: 0;
@@ -345,7 +347,7 @@ h2 {
 }
 
 #countdown li:after {
-  background-color: #FFFFFF;
+  background-color: #000;
   content: "";
   height: 11px;
   right:0;
@@ -373,7 +375,7 @@ h2 {
 
 
 .cart a {
-  color: #FFFFFF;
+  color: #000;
   display: block;
   font-size: 24px;
   text-transform: uppercase;
@@ -392,8 +394,7 @@ h2 {
 *******Event CSS******
 **************************/
 #minicursos {
-  background-color: #778899 ;
-  background-image: url("../images/minicursos-bg.jpg");
+
   position: relative;  
   width: 100%;
 }
@@ -406,7 +407,7 @@ h2 {
 
 
 #minicursos h2 {
-  color: #FFFFFF;
+  color: #000;
   font-size: 36px;
   font-weight: 300;
   margin-bottom: 40px;
@@ -419,7 +420,7 @@ h2 {
 }
 
 .single-event h4 {
-  color: #FFFFFF;
+  color: #000;
   font-size: 24px;
   font-weight: 300;
   line-height: 26px;
@@ -442,7 +443,7 @@ h2 {
 .even-control-right {
   position: absolute;
   font-size: 24px;
-  color: #fff;
+  color: #000;
   top: 0;
 }
 
@@ -460,7 +461,7 @@ h2 {
 **************************/
 
 #about {
-  background-color: #379131;  
+
   position: relative;  
   width: 100%;
   display: flex;
@@ -477,7 +478,7 @@ h2 {
 
 .about-content {
   width: 50%;
-
+  color: #000;
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -490,13 +491,13 @@ h2 {
 }
 
 .about-content p {
-  font-size: 17px;
+  font-size: 20px;
   font-family: 'Dosis',sans-serif;
 }
 
 #about .btn-primary {
   background-color: #137c61;
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   border: none;
   margin-top: 28px;
@@ -513,8 +514,7 @@ h2 {
 **************************/
 
 #twitter {
-  background-color: #ecedef;
-  background-image: url("../images/twitter-bg.jpg");
+
   background-position: center bottom;
   background-size: cover;
   background-repeat:no-repeat;
@@ -581,8 +581,7 @@ h2 {
 **************************/
 
 #sponsor {
-  background-color: #1881a2;
-  background-image: url("../images/sponsor-bg.jpg");
+
   background-position:50% 0;
   background-size: cover;
   background-repeat:no-repeat;
@@ -623,7 +622,7 @@ h2 {
 
 .sponsor-control-left, 
 .sponsor-control-right {
-  color: #FFFFFF;
+  color: #000;
   font-size: 24px;
   position: absolute;
   top: 20%;
@@ -726,7 +725,7 @@ h2 {
 
 #contact-section .btn-primary:hover {
   background-color: #212020;
-  color: #fff
+  color: #000
 }
 
 
@@ -740,7 +739,7 @@ h2 {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  color: #000;
   font-size: 20px;
   padding: 26px 0;
 }
