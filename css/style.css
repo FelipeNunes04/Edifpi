@@ -101,4 +101,7 @@
 .ear-piece{
   margin-left: -20px;
 }
-
+#logo-ifpi {
+  float: none;
+  margin: 100px auto;
+}

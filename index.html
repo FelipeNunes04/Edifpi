@@ -51,8 +51,9 @@
 		                    <li class="scroll"><a href="#about">Sobre</a></li>                   
 		                    <li class="scroll"><a href="#palestras">Palestras</a></li>
 		                    <li class="scroll"><a href="#minicursos">Minicursos</a></li>
+		                    <li class="scroll"><a href="#startups">Startups</a></li>
 		                    <li class="scroll"><a href="#programacao">Programação</a></li>
-		                    <li><a class="no-scroll" href="#comissoes">Inscreva-se</a></li>
+		                    <li><a class="no-scroll" target="_blank" href="http://sefd.ifpicos.com.br/">Inscreva-se </a></li>
 		                    <li class="scroll"><a href="#contact">Contato</a></li>       
 		                </ul>
 		            </div>
@@ -142,13 +143,13 @@
 				<img src="images/palestra/anderson.jpg" class="img">
 				<h3>Palestra</h3>
 				<p>Hamurabi</p>
-				<span>Curriculo</span>
+				<a href="#biografia1" data-toggle="modal" class="btn btn-lg btn-primary">Biografia</a>
 				</div>
 				<div class="col-md-6 text-center" >
 				<img src="images/palestra/anderson.jpg" class="img">
-				<h3>Palestra</h3>
-				<p>Anderson</p>
-				<span>Curriculo</span>
+				<h3>Empreendedorismo em Negócios Digitais e o Ecossistema Local de Startups</h3>
+				<p>Anderson Soares</p>
+				<a href="#biografia2" data-toggle="modal" class="btn btn-lg btn-primary">Biografia</a>
 				</div>
 			
 			</div>
@@ -161,43 +162,69 @@
 				<h2 class="heading text-center">Minicursos</h2>
 				<div class="col-md-4 text-center" >
 				<img src="images/minicurso/felipe.jpg" class="img">
-				<h3>Minicurso</h3>
-				<p>Instrutor</p>
-				<span>Descricao</span>
+				<h3>Single Page Apps com AngularJS</h3>
+				<p>Feipe Nunes</p>
 				</div>
 				<div class="col-md-4 text-center" >
 				<img src="images/minicurso/dayvid.jpg" class="img">
-				<h3>Minicurso</h3>
-				<p>Instrutor</p>
-				<span>Descricao</span>
+				<h3>Criando sites com WordPress</h3>
+				<p>Dayvid Emerson</p>
 				</div>
 				<div class="col-md-4 text-center" >
 				<img src="images/minicurso/kelvin.jpg" class="img">
-				<h3>Minicurso</h3>
-				<p>Instrutor</p>
-				<span>Descricao</span>
+				<h3>Aplicações em Tempo Real utilizando FireBase</h3>
+				<p>Kelvin Campelo</p>
 				</div>
 				<div class="col-md-4 text-center" >
 				<img src="images/minicurso/woshington.jpg" class="img">
-				<h3>Minicurso</h3>
-				<p>Instrutor</p>
-				<span>Descricao</span>
+				<h3>Criando aplicações com Cake PHP</h3>
+				<p>Woshington Valdeci</p>
 				</div>
 				<div class="col-md-4 text-center" >
 				<img src="images/minicurso/guilherme.jpg" class="img">
-				<h3>Minicurso</h3>
-				<p>Instrutor</p>
-				<span>Descricao</span>
+				<h3>Construindo Aplicações Web Real Time com Ruby on Rails e Node.js</h3>
+				<p>Guilherme Feitosa</p>
 				</div>
 				<div class="col-md-4 text-center" >
 				<img src="images/minicurso/fabio.jpg" class="img">
-				<h3>Minicurso</h3>
-				<p>Instrutor</p>
-				<span>Descricao</span>
+				<h3>Criando aplicações Web com PHP e CodeIgniter</h3>
+				<p>Fábio Luz</p>
 				</div>
 			</div>
 		</div>
-	</section>-<!--/#palestras-->
+	</section>-<!--/#minicursos-->
+
+	<section id="startups">
+		<div class="container">
+			<div class="row">
+				<h2 class="heading text-center">Startups</h2>
+				<div class="col-md-3 text-center">
+					<img src="images/startup/myclass.png" alt="logo-myclass" title="Myclass" class="img-responsive" />
+					<h3>MyClass</h3>
+					<p>Picos</p>
+				</div>
+			
+				<div class="col-md-3 text-center">
+					<img src="images/startup/virtex.png" alt="logo-virtex" title="Virtex" class="img-responsive img" />
+					<h3>Virtex</h3>
+					<p>Picos</p>
+				</div>
+
+				<div class="col-md-3 text-center">
+					<img src="images/startup/meupedido.png" alt="logo-meupedidoonline" title="Meu Pedido Online" class="img-responsive" />
+					<h3>Meupedido.online</h3>
+					<p>Floriano</p>
+				</div>
+			
+				<div  class="col-md-3 text-center">
+					<img src="images/startup/lander.png" title="Lander app" alt="logo-lander" class="img-responsive" />
+					<h3>Lander</h3>
+					<p>Teresina</p>
+				</div>
+					
+			</div>
+		</div>
+	</section>-<!--/#startups-->
 	
 
 	<section id="programacao">
@@ -268,7 +295,7 @@
 				</div>
 			</div>			
 		</div>
-	</section><!--/#minicursos-->
+	</section><!--/#programação-->
 
 <hr/>
 	
@@ -277,28 +304,9 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<h2 class="text-center">Realização</h2>	
-						
-						<div class="col-md-4 text-center">	
-						<img src="images/ifpi.png" alt="logo-ifpi" title="Instituto Federal do Piauí" class="img-responsive " />
+						<div class="col-md-5" id="logo-ifpi">	
+							<img src="images/ifpi.png" alt="logo-ifpi" title="Instituto Federal do Piauí" class="img-responsive " />
 						</div>
-
-							<div class="col-md-2 text-center">
-						<img src="images/startup/myclass.png" alt="logo-myclass" title="Myclass" class="img-responsive" />
-							</div>
-						
-						
-							<div class="col-md-2 text-center">
-						<img src="images/startup/virtex.png" alt="logo-virtex" title="Virtex" class="img-responsive img" />
-							</div>
-
-							<div class="col-md-2 text-center">
-						<img src="images/startup/meupedido.png" alt="logo-meupedidoonline" title="Meu Pedido Online" class="img-responsive" />
-							</div>
-						
-						<div  class="col-md-2 text-center">
-						<img src="images/startup/lander.png" title="Lander app" alt="logo-lander" class="img-responsive" />
-							</div>
-					
 					</div>
 				</div>				
 		</div>
@@ -404,6 +412,51 @@
 
 
 	<!-- biografia1 -->
+
+	<div id="biografia1" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+
+		  <!-- Modal content-->
+			<div class="modal-content">
+			    <div class="modal-header">
+			    	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        	<h3 class="modal-title text-primary text-center">Hamurabi</h3>
+			    </div>
+			    <div class="modal-body">
+			    	<img src="images/palestra/anderson.jpg" class="img-responsive img-modal">
+			    	<p class=" text-primary indent text-justify">Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer in sapien. Fusce tellus odio, dapibus id, fermentum quis, suscipit id, erat. Fusce aliquam vestibulum ipsum. Aliquam erat volutpat. Pellentesque sapien. Cras elementum. Nulla pulvinar eleifend sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque porta. Vivamus porttitor turpis ac leo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi gravida libero nec velit. Morbi scelerisque luctus velit. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Proin mattis lacinia justo. Vestibulum facilisis auctor urna.
+					</p>
+			    </div>
+	            <div class="modal-footer">
+			       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!--/biografia1 -->
+
+	<!-- biografia2 -->
+	<div id="biografia2" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+
+	  <!-- Modal content-->
+	  		<div class="modal-content">
+	    		<div class="modal-header">
+	      			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h3 class="modal-title text-primary text-center">Anderson Soares</h3>
+	    		</div>
+		    	<div class="modal-body">
+		      		<img src="images/palestra/anderson.jpg" class="img-responsive img-modal" alt="palestrante-anderson">
+		      		<p class="text-primary indent text-justify"> Diretor geral da Mundi Tecnologia, empreendedor há mais de 15 anos e especialista em negócios digitais. Possui alguns cases de sucesso em produtos de base tecnológica de alcance global e algumas experiências de fracassos a compartilhar. Atualmente é presidente da Câmara Setorial de Tecnologia da Informação e Comunicação do Piauí.
+					</p>
+		    	</div>
+            	<div class="modal-footer">
+		       		<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+		    	</div>
+	   		</div>
+	  	</div>
+	</div>
+	<!--/biografia2 -->
 
 	
 
