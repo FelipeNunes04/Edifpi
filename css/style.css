@@ -58,14 +58,13 @@
   margin-top: 70px;
   text-transform: uppercase;
 }
-#realizacao{
-	margin: 100px auto;	
-}
+
 #sponsor{
-	min-height: 500px !important;
+	min-height: 400px !important;
 }
 #contact-section .btn-primary {
 	margin-bottom: 20px;
+
 }
 .heading{
 	margin-top: 60px;
@@ -97,5 +96,9 @@
 .img{
   max-width: 300px;
   height: auto;
+}
+
+.ear-piece{
+  margin-left: -20px;
 }
 
