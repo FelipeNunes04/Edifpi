@@ -132,7 +132,7 @@ h2 {
 .navbar-right li a:focus,  
 .navbar-right .active a {
   background-color: #000;
-  color: #16728f
+  color: #fff;
 }
 
 
